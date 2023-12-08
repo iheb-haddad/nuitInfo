@@ -1,6 +1,8 @@
 import React from 'react'
+import Tip from '../tip/tip';
 
 function Dashboard() {
+  const alertes = JSON.parse(localStorage.getItem('alertes')) || [];
   return (
     <div>
         <div className="headBody">
@@ -11,7 +13,7 @@ function Dashboard() {
                 <img src="./bell.png" alt="" />
                 <img src="./Setting.png" alt="" />
                 <div className="rounded-image">
-                  <img src="./profile.png"alt="" />
+                  <img src="./profile.png" alt="" />
                 </div>
               </div>
             </div>
@@ -29,6 +31,7 @@ function Dashboard() {
                 <div className="statIcon"><img src="./alerteIcon.png" alt="" /></div>
             </div>
         </div>  
+        <Tip/>
     </div>
   )
 }
