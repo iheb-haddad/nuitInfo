@@ -151,4 +151,9 @@
     margin-bottom: 30px;
   }
 }   
- 
+ .navbar .head{
+  font-family: "Montserrat",sans-serif;
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 700;
+ }

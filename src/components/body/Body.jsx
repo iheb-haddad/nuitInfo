@@ -4,14 +4,6 @@ import { faChevronDown,faChevronUp,faBars,faRightFromBracket} from '@fortawesome
 import './Body.css';
 
 function Body(props) {
-  const userConnected = JSON.parse(localStorage.getItem('userConnected'));
-  const [isDeconnecting,setIsDeconnecting] = useState(false)
-  const handleDeconnect = () => {
-    props.setConnectValide(false)
-    props.setSessionValide(false)
-    localStorage.setItem('connectValide', false);
-    sessionStorage.setItem('connectValide', false);
-  }
   return (
     <div className="body">             
         {props.componentCharged}

@@ -1,4 +1,6 @@
 import "./Dashboard.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 const latestPosts = [
   {
@@ -21,11 +23,11 @@ const latestPosts = [
   },
 ];
 
-function Dashboard() {
+function Dashboard(props) {
   return (
     <div>
       <div className="headBody">
-        {/* {props.screenWidth < 1160 && <FontAwesomeIcon icon={faBars} onClick={props.showNavbar} className='barIcon'/>} */}
+        {props.screenWidth < 1160 && <FontAwesomeIcon icon={faBars} onClick={props.showNavbar} className='barIcon'/>}
         <div className="headBar">
           <div className="title">Explore Our Daily Quiz</div>
           <div className="iconsBar">

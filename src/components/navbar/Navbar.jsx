@@ -8,7 +8,7 @@ function Navbar(props) {
   <div style={{display:"flex"}}>
     <div className="navbar">
         <div className="head"> 
-          <img src="" alt="" />
+          Climatizer
         </div>
         <div className="navbarBody">
         <div className={`navLine`} onClick={props.clickDashboard}>

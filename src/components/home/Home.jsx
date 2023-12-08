@@ -27,59 +27,20 @@ function Home(props) {
     setShowNavbar((prev) => { return !prev })
   };
 
-  const [navComponent, setNavComponent] = useState(<Dashboard />)
+  const [navComponent, setNavComponent] = useState(<Dashboard showNavbar={handleShowNavbar}/>)
 
   const [navLineClicked,setNavLineClicked] = useState("dashboard")
 
     const handleClickDashboard = () => {
       setModBackground(false)
-      setNavComponent(<Dashboard />)
+      setNavComponent(<Dashboard showNavbar={handleShowNavbar}/>)
         setNavLineClicked("dashboard")
         screenWidth < 1160 && setShowNavbar(false)
     };
-    const handleClickHistorique = () => {
+    const handleClickQuiz = () => {
       setModBackground(false)
-      // setNavComponent(<Historique />)
-      setNavLineClicked("historique")
-      screenWidth < 1160 && setShowNavbar(false)
-    };
-
-
-
-    const handleClickHome = () => {
-      setModBackground(true)
-      setNavLineClicked("home")
-      // setNavComponent(<Accueil />)
-      screenWidth < 1160 && setShowNavbar(false)
-    };
-    const handleClickProfile = () => {
-      setModBackground(false)
-      // setNavComponent(<ProfilePage />)
-      setNavLineClicked("profile")
-      screenWidth < 1160 && setShowNavbar(false)
-    };
-    const handleClickRanking = () => {
-      setModBackground(true)
-      // setNavComponent(<Ranking/>)
-      setNavLineClicked("ranking")
-      screenWidth < 1160 && setShowNavbar(false)
-    };
-    const handleClickSections = () => {
-      setModBackground(true)
-      // setNavComponent(<GestionSections />)
-      setNavLineClicked("sections")
-      screenWidth < 1160 && setShowNavbar(false)
-    };
-    const handleClickSources = () => {
-      setModBackground(true)
-      // setNavComponent(<GestionSources />)
-      setNavLineClicked("sources")
-      screenWidth < 1160 && setShowNavbar(false)
-    };
-    const handleClickDocuments = () => {
-      setModBackground(true)
-      // setNavComponent(<GestionDocuments />)
-      setNavLineClicked("documents")
+      setNavComponent(<Quiz />)
+      setNavLineClicked("quiz")
       screenWidth < 1160 && setShowNavbar(false)
     };
 
@@ -92,18 +53,12 @@ function Home(props) {
             <Navbar 
             showNavbar={handleShowNavbar}
             clickDashboard={handleClickDashboard}
-            clickHome={handleClickHome}
-            clickHistorique={handleClickHistorique}
-            clickRanking={handleClickRanking}
-            clickSections={handleClickSections}
-            clickSources={handleClickSources}
-            clickDocuments={handleClickDocuments}
+            clickQuiz={handleClickQuiz}
             navLineClicked={navLineClicked}/>}
             {(!showNavbar || screenWidth > 450) 
            && <Body 
-            showNavbar={handleShowNavbar}
+            
             screenWidth={screenWidth}
-            clickProfile={handleClickProfile}
             setConnectValide={props.setConnectValide}
             setSessionValide={props.setSessionValide}
             componentCharged={navComponent}/>}
