@@ -1,5 +1,25 @@
-import React from 'react'
-import './Dashboard.css'
+import "./Dashboard.css";
+
+const latestPosts = [
+  {
+    photo: "/profile.png",
+    author: "Fares Gabsi",
+    content:
+      "Over 8 million tons of plastic find their way into our oceans annually, posing a serious threat to marine life",
+  },
+  {
+    photo: "/profile.png",
+    author: "Fares Gabsi",
+    content:
+      "Over 8 million tons of plastic find their way into our oceans annually, posing a serious threat to marine life",
+  },
+  {
+    photo: "/profile.png",
+    author: "Fares Gabsi",
+    content:
+      "Over 8 million tons of plastic find their way into our oceans annually, posing a serious threat to marine life",
+  },
+];
 
 function Dashboard() {
   return (
@@ -34,22 +54,14 @@ function Dashboard() {
                 </div>
             </div>
             <div className="bigWidget">
-                <div>
-                    <div className="title">How Much Carbone <br/>you saved ?</div>
-                    <div className="subtitle">Looks Like You Did Great </div>
-                    <div className="stats">36 Co2</div>
-                </div>
-                <div className="micBox">
-                    <div className="imageBox">
-                    <img src="./mic.png" alt="" />
-                    </div>
-
-                </div>
+                <div className="title">How Much Carbone you saved ?</div>
+                <div className="subtitle">Looks Like You Did Great </div>
+                <div className="stats">36 Co2</div>
             </div>
             </div>
         </div>  
     </div>
-  )
+  );
 }
 
-export default Dashboard
+export default Dashboard;
