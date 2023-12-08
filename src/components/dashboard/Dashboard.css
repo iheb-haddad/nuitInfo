@@ -1,0 +1,30 @@
+.contentBody{
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    margin-top: 20px;
+}
+.smallBox{
+    background-color: white;
+    display: flex;
+    padding: 10px 30px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+ .smallBox .stat{
+    font-family: "Montserrat", sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.smallBox .stat .chiffres{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #5356d0;
+}
+.smallBox .statIcon img{
+    width: 60px;
+    height: 60px;
+}
