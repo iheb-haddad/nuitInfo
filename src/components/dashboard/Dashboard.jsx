@@ -34,9 +34,17 @@ function Dashboard() {
                 </div>
             </div>
             <div className="bigWidget">
-                <div className="title">How Much Carbone you saved ?</div>
-                <div className="subtitle">Looks Like You Did Great </div>
-                <div className="stats">36 Co2</div>
+                <div>
+                    <div className="title">How Much Carbone <br/>you saved ?</div>
+                    <div className="subtitle">Looks Like You Did Great </div>
+                    <div className="stats">36 Co2</div>
+                </div>
+                <div className="micBox">
+                    <div className="imageBox">
+                    <img src="./mic.png" alt="" />
+                    </div>
+
+                </div>
             </div>
             </div>
         </div>  
