@@ -16,17 +16,17 @@ function Navbar(props) {
             <img src="./Dashboard.png" alt="" />
             <div className="title" >Overview</div>
         </div>
-        <div className={`navLine`} onClick={props.clickHistorique}>
+        <div className={`navLine`} onClick={props.clickQuiz}>
         {props.navLineClicked === 'quiz' && <img src="./Selector.png" alt="" className='selector'/>}
             <img src="./leaderboard.png" alt="" />
             <div className="title" >Daily Quiz</div>
         </div>
-        <div className={`navLine`} onClick={props.clickRanking}>
-        {props.navLineClicked === 'posts' && <img src="./Selector.png" alt="" className='selector'/>}
+        <div className={`navLine`} onClick={props.clickTip}>
+        {props.navLineClicked === 'tip' && <img src="./Selector.png" alt="" className='selector'/>}
             <img src="./view-list.png" alt="" />
             <div className="title" >Posts</div>
         </div>
-        <div className={`navLine`} onClick={props.clickRanking}>
+        <div className={`navLine`} >
         {props.navLineClicked === 'calculator' && <img src="./Selector.png" alt="" className='selector'/>}
             <img src="./money-bill-stack.png" alt="" />
             <div className="title" >Ai Carbon Calculator</div>

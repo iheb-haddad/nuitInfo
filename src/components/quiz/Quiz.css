@@ -1,0 +1,15 @@
+.quiz_container {
+    width: min(90%, 1000px);
+    margin: 0 auto;
+  }
+  
+  .container p {
+    margin: 1rem 0;
+  }
+  
+  .quiz_container .quizzes {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }

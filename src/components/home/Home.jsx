@@ -1,6 +1,6 @@
 import './Home.css'
 import React, { useEffect,useState } from 'react';
-import { Navbar ,Body, Dashboard} from '../index'
+import { Navbar ,Body, Dashboard,Quiz,Tip} from '../index'
 function Home(props) {
   const userConnected = JSON.parse(localStorage.getItem('userConnected'));
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -44,6 +44,13 @@ function Home(props) {
       screenWidth < 1160 && setShowNavbar(false)
     };
 
+    const handleClickTip = () => {
+      setModBackground(false)
+      setNavComponent(<Tip />)
+      setNavLineClicked("tip")
+      screenWidth < 1160 && setShowNavbar(false)
+    };
+
 
 
   return (
@@ -54,13 +61,10 @@ function Home(props) {
             showNavbar={handleShowNavbar}
             clickDashboard={handleClickDashboard}
             clickQuiz={handleClickQuiz}
+            clickTip = {handleClickTip}
             navLineClicked={navLineClicked}/>}
             {(!showNavbar || screenWidth > 450) 
            && <Body 
-            
-            screenWidth={screenWidth}
-            setConnectValide={props.setConnectValide}
-            setSessionValide={props.setSessionValide}
             componentCharged={navComponent}/>}
       </div>
     </>
