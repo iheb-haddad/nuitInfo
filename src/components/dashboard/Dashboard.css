@@ -1,30 +1,53 @@
 .contentBody{
     display: flex;
     flex-direction: column;
-    padding: 0 30px;
+    padding: 0 80px;
     margin-top: 20px;
 }
-.smallBox{
-    background-color: white;
+.contentBody .widgets{
     display: flex;
-    padding: 10px 30px;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 40px;
 }
- .smallBox .stat{
-    font-family: "Montserrat", sans-serif;
-    height: 100%;
+.smallWidget{
+    background-color: #fff4f2;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    border-radius: 20px;
+    margin-right: 40px;
+    padding: 20px;
 }
-.smallBox .stat .chiffres{
-    font-size: 2rem;
-    font-weight: bold;
-    color: #5356d0;
+.smallWidget > img{
+    width: 95%;
 }
-.smallBox .statIcon img{
-    width: 60px;
-    height: 60px;
+.statIcon{
+    margin-top: 10px;
+    display: flex;
+}
+.bigWidget{
+    background-image: url("./Rectangle.png");
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    background-color: #fff4f2;
+    border-radius: 20px;
+}
+.widgetText{
+    margin-right: 40px;
+}
+.widgetText .title{
+    font-size: 1.2rem;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 10px;
+}
+.widgetText .subtitle{
+    font-size: 0.9rem;
+    font-family: "Montserrat",sans-serif;
+    font-weight: 400;
+    color: #8f92a1;
 }

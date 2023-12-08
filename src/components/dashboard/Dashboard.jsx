@@ -1,4 +1,5 @@
 import React from 'react'
+import './Dashboard.css'
 
 function Dashboard() {
   return (
@@ -21,12 +22,22 @@ function Dashboard() {
             </div>
         </div>
         <div className="contentBody">
-            <div className="accueilBox smallBox">
-                <div className="stat">
-                    <div className="chiffres">{alertes.length}</div>
-                    <div className="type">Alertes</div>
+            <div className="widgets">
+            <div className="smallWidget">
+                <img src="./Rectangle28.png" alt="" />
+                <div className="statIcon">
+                    <div className="widgetText">
+                        <div className="title">Myth Or Fact ?</div>
+                        <div className="subtitle">Daily Quiz</div>
+                    </div>
+                    <img src="./Icon.png" alt="" />
                 </div>
-                <div className="statIcon"><img src="./alerteIcon.png" alt="" /></div>
+            </div>
+            <div className="bigWidget">
+                <div className="title">How Much Carbone you saved ?</div>
+                <div className="subtitle">Looks Like You Did Great </div>
+                <div className="stats">36 Co2</div>
+            </div>
             </div>
         </div>  
     </div>
