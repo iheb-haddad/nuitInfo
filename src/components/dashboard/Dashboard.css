@@ -1,53 +1,75 @@
-.contentBody{
-    display: flex;
-    flex-direction: column;
-    padding: 0 80px;
-    margin-top: 20px;
+.contentBody {
+  display: flex;
+  flex-direction: column;
+  padding: 0 80px;
+  margin-top: 20px;
 }
-.contentBody .widgets{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 40px;
+.contentBody .widgets {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
-.smallWidget{
-    background-color: #fff4f2;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1;
-    border-radius: 20px;
-    margin-right: 40px;
-    padding: 20px;
+.smallWidget {
+  background-color: #fff4f2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  border-radius: 20px;
+  margin-right: 40px;
+  padding: 20px;
 }
-.smallWidget > img{
-    width: 95%;
+.smallWidget > img {
+  width: 95%;
 }
-.statIcon{
-    margin-top: 10px;
-    display: flex;
+.statIcon {
+  margin-top: 10px;
+  display: flex;
 }
-.bigWidget{
-    background-image: url("./Rectangle.png");
-    display: flex;
-    flex-direction: column;
-    flex: 2;
-    background-color: #fff4f2;
-    border-radius: 20px;
+.bigWidget {
+  background-image: url("./Rectangle.png");
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  background-color: #fff4f2;
+  border-radius: 20px;
 }
-.widgetText{
-    margin-right: 40px;
+.widgetText {
+  margin-right: 40px;
 }
-.widgetText .title{
-    font-size: 1.2rem;
-    font-family: "Montserrat",sans-serif;
-    font-weight: 700;
-    color: black;
-    margin-bottom: 10px;
+.widgetText .title {
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 10px;
 }
-.widgetText .subtitle{
-    font-size: 0.9rem;
-    font-family: "Montserrat",sans-serif;
-    font-weight: 400;
-    color: #8f92a1;
+.widgetText .subtitle {
+  font-size: 0.9rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #8f92a1;
+}
+
+.latest h2 {
+  font-family: sans-serif;
+}
+
+.post {
+  display: flex;
+  margin: 20px 0;
+  padding: 10px;
+  gap: 0.5rem;
+  font-family: sans-serif;
+}
+
+.post .postAuthor {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.post .postText {
+  margin-top: 0.15rem;
+  font-weight: 400;
 }
